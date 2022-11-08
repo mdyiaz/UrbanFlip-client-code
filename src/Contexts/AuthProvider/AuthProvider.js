@@ -4,7 +4,7 @@ import app from '../../firebase/firebase.config';
 
 
 
-const AuthContext = createContext();
+export const AuthContext = createContext();
 const auth = getAuth(app);
 
 const AuthProvider = ({children}) => {
@@ -36,7 +36,7 @@ const AuthProvider = ({children}) => {
             return () => {
                 return unsubscribe();
             }
-            
+
     }, [])
 
 
