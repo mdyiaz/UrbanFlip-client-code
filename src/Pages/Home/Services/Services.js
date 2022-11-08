@@ -1,0 +1,46 @@
+import React, { useEffect, useState } from 'react';
+import ServicesList from '../../../Shared/ServicesList/ServicesList';
+
+const Services = () => {
+
+    const [services, setServices] = useState([]);
+
+    useEffect( () => {
+        fetch('Services.json')
+        .then(res => res.json())
+        .then(data => setServices(data))
+    }, [])
+    return (
+        <div className='text-center'>
+            <div>
+                <p className='text-2xl font-bold bg-white text-teal-400 mb-5'>My Services</p>
+                <h3 className='text-3xl font-semibold text-teal-400'>Full service means you get the whole shebang… <br /> from the beginning to the very end. Full service photography is just that. The photographer is involved from the beginning and stays involved until you get your images, or in some cases, your images get placed on your walls!</h3>
+            </div>
+
+
+
+
+
+
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-14 mt-10'>
+
+
+                    
+
+                        {
+                            services.map(service => <ServicesList
+                            
+                                key={service._id}
+                                service={service}
+
+
+                            ></ServicesList>)
+                        }
+                  
+
+            </div>
+        </div>
+    );
+};
+
+export default Services;
