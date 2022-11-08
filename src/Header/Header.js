@@ -6,8 +6,14 @@ const Header = () => {
 
     const menuItems = <>
         <li><Link className='text-amber-500 font-semibold' to="/">Home</Link></li>
+        <li><Link className='text-amber-500 font-semibold' to="/showservices">See Services</Link></li>
+
         <li><Link className='font-semibold text-amber-500' to="/login">Login</Link></li>
         <li><Link className='font-semibold text-amber-500' to="/register">Register</Link></li>
+        <li><Link className='font-semibold text-amber-500' to="/blog">Blog</Link></li>
+
+
+        
     </>
     return (
         <div className="navbar bg-teal-900 mb-10">

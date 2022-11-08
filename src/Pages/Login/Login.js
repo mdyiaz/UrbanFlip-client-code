@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import login from '../../assets/login.png'
+import loginImg from '../../assets/login.png'
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
 
 const Login = () => {
@@ -27,7 +27,7 @@ const Login = () => {
           <div className="text-center lg:text-left">
            
 
-            <img className='' src={login} alt="" />
+            <img className='' src={loginImg} alt="" />
 
 
           </div>
