@@ -1,10 +1,13 @@
 import React from 'react';
+import { BsCamera } from "react-icons/hi2";
+
 
 const MeaningFullSection2 = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-36 mb-10 gap-10'>
 
              <div>
+               
                 <h2 className='text-2xl font-bold text-yellow-900 mb-3 mt-10 text-center'>Architectural photography</h2>
                 <p className='text-yellow-900 text-center'>In this website of mine you will find various Architecture Photographs, they will attract you very much, my pictures mainly represent the ancient culture. Hope you enjoy it very much.</p>
             </div>

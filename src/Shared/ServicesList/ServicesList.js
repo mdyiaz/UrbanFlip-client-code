@@ -16,7 +16,7 @@ const ServicesList = ({service}) => {
     <button className="btn btn-outline btn-info">Ratings: {rating}</button>
 
 
-      <button className="btn  btn-accent">Details</button>
+      <button className="btn  btn-accent">View Details</button>
       
 
     </div>
