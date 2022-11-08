@@ -6,7 +6,7 @@ const ServicesList = ({service}) => {
         <div className="card w-96 bg-base-100 shadow-xl">
   <figure><img className='h-60 w-80 rounded-2xl' src={img} alt="Shoes" /></figure>
   <div className="card-body">
-    <h2 className="card-title">{name}</h2>
+    <h2 className="card-title font-extrabold">{name}</h2>
     <p>{description.slice(0, 100)}</p>
     <button className="btn btn-outline btn-secondary">Price: {price} </button> 
 

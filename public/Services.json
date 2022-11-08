@@ -19,6 +19,7 @@
   },
   {
     "_id": "6369d851dd0f86c314c1d42b",
+    "name":"Sunset photography",
     "description": "The last hour before sunset and the first hour after sunrise are coveted by professional photographers. Referred to as “the golden hour” or “magic hour,” these times provide the perfect light to capture stunning photos. Learning to harness the power of the golden hour is a tool every photographer can use. It represents the end of the day and the coming of a new one. The hustle and bustle of life slow down and nature takes over. Sunset photography is an opportunity to capture the magnificent blaze of life as it comes to a close. It signifies the change from afternoon to evening, and then night. Sunsets can produce great silhouettes with vibrant colors in the background, thus adding a dramatic look or feeling to the subject, especially when your subject is a couple. And if you are taking photos for a book cover or prenuptial session, having a sunset as the background of your subject is really interesting.",
     "price": "$800",
     "img": "https://cdn3.dpmag.com/2019/10/shutterstock_1239834655.jpg",
@@ -27,6 +28,7 @@
   },
   {
     "_id": "6369d851b92379c80dd9189c",
+    "name":"Food photography",
     "description": "Prepare your food to be photo-ready: Arrange your food to show-off its best features. Choose complementary surfaces and cutlery. Plate the main subject of your photo in the middle of your plate and leave room on the edges. Get the lighting right: Light from the side, rather than the front. Image composition is an art form in itself. Apart from light, it's one of the most difficult aspects of food photography to master. It can take years for composition to become second nature to you. Food tends to look its freshest and most vibrant when the background colors are neutral and desaturated. Greys, whites, blacks, and browns usually work well, especially if you are using brightly colored food like fresh herbs, peppers, fruits, or veggies. It is a career. However, if you are shooting for little pictures on the menus of small restaurants, you will probably need other clients to make ends meet every month. On the other hand, if you are shooting highly-styled foods for top magazines and websites, it can be a very lucrative business.",
     "price": "$400",
     "img": "https://br24.com/wp-content/uploads/Br24_Blog_FoodPhotography_OverheadAngle.jpg",
@@ -35,6 +37,7 @@
   },
   {
     "_id": "6369d851b7b3e4d09008993b",
+    "name":"Vintage photography",
     "description": "Vintage photography is a broad category. It's not typified by any one technology or technique. It includes every kind of analogue photography, from century-old cameras that could live in a museum to cameras that once used Kodachrome and even film cameras from the early 2000s. Daguerreotypes (dah-gare-oh-types)From 1839 to 1860, daguerreotypes were the first publicly available photos. They were produced on silver-coated copper plates, so the back of these prints may look like copper. These images are shiny and look clearest when viewed straight on. That's why I personally favour the  limit, which seems to be common amongst top photo dealers. So, this means prints made within those first five years can be called vintage. However, many say vintage items are at least 20 years old. So, generally speaking, something can be considered vintage if it is between 20 and 99 years old. Many vintage items are more than simply outdated.",
     "price": "$1000",
     "img": "https://images.unsplash.com/photo-1501829385782-9841539fa6bf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZXxlbnwwfHwwfHw%3D&w=1000&q=80",
@@ -43,6 +46,7 @@
   },
   {
     "_id": "6369d851c8109495f0254a85",
+    "name":"Travel photography",
     "description": "Travel photography is a genre of photography that may involve the documentation of an area's landscape, people, cultures, customs, and history. We'll cut straight to the jugular here. A great travel picture -- like any great picture -- tells a story. It connects your audience to the scene in your composition. It engages a viewer's imagination, stops them for a moment and has a magnetic pull that draws their eyes. Travel photography is the broadest photography genre in terms of all the different subjects it covers. It encompasses numerous other areas of photography, such as street, landscape, or architecture photography. Travel photographers earn an average of $1,838 per month or $424 per week. But this isn't easy to determine. Travel photographers aren't always paid on a monthly basis because they receive financial rewards for each task or activity they perform.",
     "price": "$1200",
     "img": "https://worldoftravelphotography.com/wp-content/uploads/2018/08/Things-I-learned-as-a-travel-photograher.jpg",
