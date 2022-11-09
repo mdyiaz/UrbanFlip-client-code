@@ -1,17 +1,41 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
+import { AuthContext } from '../Contexts/AuthProvider/AuthProvider';
 
 const Header = () => {
+
+
+  const  {user, logOut} = useContext(AuthContext)
+
+  const handleLogOut = () => {
+    logOut()
+    .then()
+    .catch();
+  }
 
     const menuItems = <>
         <li><Link className='text-amber-500 font-semibold' to="/">Home</Link></li>
         <li><Link className='text-amber-500 font-semibold' to="/showservices">See Services</Link></li>
-
-        <li><Link className='font-semibold text-amber-500' to="/login">Login</Link></li>
         <li><Link className='font-semibold text-amber-500' to="/register">Register</Link></li>
         <li><Link className='font-semibold text-amber-500' to="/blog">Blog</Link></li>
 
+
+    {
+      user?.email ?
+        <>
+
+            <li className='font-semibold text-amber-500'>
+              <button onClick={handleLogOut}>Sign Out</button>
+            </li>
+
+        </>
+
+      :
+
+      <li><Link className='font-semibold text-amber-500' to="/login">Login</Link></li>
+
+    }
 
         
     </>
