@@ -8,6 +8,7 @@ import Register from './Pages/Register/Register';
 import AllServices from './Pages/AllServices/AllServices';
 import SHowServices from './Pages/SHowServices/SHowServices';
 import Blog from './Pages/Blog/Blog';
+import ServiceDetails from './Shared/ServicesList/ServiceDetails';
 
 function App() {
 
@@ -32,7 +33,19 @@ function App() {
         {
           path:'/blog',
           element:<Blog></Blog>
-        }
+        },
+        {
+          path:'/showservices',
+          element:<SHowServices></SHowServices>
+        },
+        {
+          path:'/servicedetails/:id',
+          loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+          element:<ServiceDetails></ServiceDetails>
+        },
+        
+
+
 
       ]
     }

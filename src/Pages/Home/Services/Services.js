@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import ServicesList from '../../../Shared/ServicesList/ServicesList';
 
 const Services = () => {
@@ -39,6 +40,8 @@ const Services = () => {
                   
 
             </div>
+
+            <Link to="/showservices" > <button className="btn btn-accent w-full">See All Services</button> </Link>
         </div>
     );
 };
