@@ -1,11 +1,19 @@
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login.png'
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import Social from './Social';
 
 const Login = () => {
 
   const {login} = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  
+
+
+  const from = location.state?.from?.pathname || '/';
 
     const handleLogin = event => {
         event.preventDefault();
@@ -16,7 +24,32 @@ const Login = () => {
         login(email, password)
         .then(result => {
           const user = result.user;
-          console.log(user);
+          
+
+
+          const currentUser = {
+            email: user.email
+          }
+
+          console.log(currentUser);
+          // get jwt token___
+          fetch('http://localhost:5000/jwt', {
+            method: 'POST',
+            headers: {
+              'content-type': 'application/json'
+            },
+            body:JSON.stringify(currentUser)
+
+
+          })
+          .then(res => res.json())
+          .then(data => {
+            console.log(data);
+            localStorage.setItem('Assignment11-token', data.token);
+            navigate(from, {replace: true });
+          });
+
+          
         })
         .catch(err => console.error(err));
 
@@ -52,10 +85,15 @@ const Login = () => {
               <div className="form-control mt-6">
                 <input className="btn btn-primary" type="submit" value="Login Now !" />
 
-                <p className='mt-3 text-sm text-center'>Dont have an Account ? <Link to ="/register" className='text-orange-600 font-semibold'> Sign Up</Link></p>
+                
                 
               </div>
             </form>
+            <p className='mt-3 text-sm text-center'>Dont have an Account ? <Link to ="/register" className='text-orange-600 font-semibold'> Sign Up</Link></p>
+
+            
+            <Social></Social>
+
           </div>
         </div>
       </div>

@@ -16,19 +16,30 @@ const Header = () => {
 
     const menuItems = <>
         <li><Link className='text-amber-500 font-semibold' to="/">Home</Link></li>
-        <li><Link className='text-amber-500 font-semibold' to="/showservices">See Services</Link></li>
-        <li><Link className='font-semibold text-amber-500' to="/register">Register</Link></li>
-        <li><Link className='font-semibold text-amber-500' to="/blog">Blog</Link></li>
-
+        
 
     {
       user?.email ?
         <>
 
+
+            <li><Link className='font-semibold text-amber-500' to="/myreviews">My Reviews</Link></li>
+            
+
+
+
+
+            <li><Link className='font-semibold text-amber-500' to="/addservice">Add Service</Link></li>
+
             <li className='font-semibold text-amber-500'>
               <button onClick={handleLogOut}>Sign Out</button>
             </li>
 
+
+            
+
+           
+           
         </>
 
       :
@@ -37,7 +48,10 @@ const Header = () => {
 
     }
 
-        
+<li><Link className='text-amber-500 font-semibold' to="/showservices">See Services</Link></li>
+        <li><Link className='font-semibold text-amber-500' to="/register">Register</Link></li>
+        <li><Link className='font-semibold text-amber-500' to="/blog">Blog</Link></li>
+
     </>
     return (
         <div className="navbar bg-teal-900 mb-10">

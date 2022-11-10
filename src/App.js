@@ -9,6 +9,8 @@ import AllServices from './Pages/AllServices/AllServices';
 import SHowServices from './Pages/SHowServices/SHowServices';
 import Blog from './Pages/Blog/Blog';
 import ServiceDetails from './Shared/ServicesList/ServiceDetails';
+import PrivateRoute from './Shared/PrivateRoute/PrivateRoute';
+import MyReviews from './Shared/PrivateRoute/MyReviews/MyReviews';
 
 function App() {
 
@@ -43,6 +45,16 @@ function App() {
           loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
           element:<ServiceDetails></ServiceDetails>
         },
+        {
+          path:'/myreviews',
+          element:<PrivateRoute><MyReviews></MyReviews></PrivateRoute>
+        },
+        {
+          path:'/servicedetails/:id',
+          loader:({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`),
+          element:<ServiceDetails></ServiceDetails>
+        }
+        
         
 
 
