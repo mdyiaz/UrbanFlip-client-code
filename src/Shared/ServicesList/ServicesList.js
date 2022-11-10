@@ -18,7 +18,7 @@ const ServicesList = ({service}) => {
   
   <div className="card-body">
     <h2 className="card-title font-extrabold">{name}</h2>
-    <p>{description.slice(0, 100)}</p>
+    <p>{description.slice(0, 99)}</p>
     <button className="btn btn-outline btn-secondary">Price: {price} </button> 
 
 

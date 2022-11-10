@@ -1,8 +1,10 @@
 import React from 'react';
+import toast from 'react-hot-toast';
+import useTitle from '../../../hooks/useTitle';
 
 const AddService = () => {
 
-
+useTitle('AddService');
     const handlertoAddedProduct = event => {
         event.preventDefault()
         const form = event.target;
@@ -19,7 +21,11 @@ const AddService = () => {
             body: JSON.stringify(service)
         })
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => {
+            if(data.acknowledged){
+                toast.success('Service SuccessFully Added');
+            }
+            console.log(data)})
         .catch(err => console.error(err))
         form.reset();
     }

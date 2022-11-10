@@ -1,13 +1,15 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../../Contexts/AuthProvider/AuthProvider';
 import MyReviewsRow from './MyReviewsRow';
+import toast from 'react-hot-toast';
+import useTitle from '../../../hooks/useTitle';
 
 const MyReviews = () => {
     const {user, logOut} = useContext(AuthContext);
     console.log(user.photoURL);
     const [reviews, setReview] = useState([])
 
-   
+   useTitle('MyReview');
 
 
     useEffect(() => {
@@ -49,7 +51,7 @@ const MyReviews = () => {
           
 
           if(data.deletedCount > 0){
-            alert('deleted successfully');
+            toast.success('Deleted');
             const remaining = reviews.filter(odr => odr._id !== id);
             setReview(remaining);
           }

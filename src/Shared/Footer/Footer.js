@@ -1,16 +1,16 @@
 import React from 'react';
-import useTitle from '../../hooks/useTitle';
+
 
 const Footer = () => {
 
-  useTitle('Footer');
+ 
     return (
         <footer className="footer footer-center p-10 bg-teal-900 text-white font-bold rounded">
   <div className="grid grid-flow-col gap-4">
-    <a className="link link-hover">About us</a> 
-    <a className="link link-hover">Contact</a> 
-    <a className="link link-hover">Jobs</a> 
-    <a className="link link-hover">Press kit</a>
+    <p className="link link-hover">About us</p> 
+    <p className="link link-hover">Contact</p> 
+    <p className="link link-hover">Jobs</p> 
+    <p className="link link-hover">Press kit</p>
   </div> 
   <div>
     <div className="grid grid-flow-col gap-4">

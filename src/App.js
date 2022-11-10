@@ -12,6 +12,8 @@ import ServiceDetails from './Shared/ServicesList/ServiceDetails';
 import PrivateRoute from './Shared/PrivateRoute/PrivateRoute';
 import MyReviews from './Shared/PrivateRoute/MyReviews/MyReviews';
 import AddService from './Pages/AllServices/AddService/AddService';
+import toast, { Toaster } from 'react-hot-toast';
+
 
 function App() {
 
@@ -57,7 +59,7 @@ function App() {
         },
         {
           path:'/addservice',
-          element:<AddService></AddService>
+          element:<PrivateRoute><AddService></AddService></PrivateRoute>
         }
         
         
@@ -71,6 +73,8 @@ function App() {
   return (
     <div>
         <RouterProvider router={router}></RouterProvider>
+        <Toaster />
+
     </div>
   );
 }
