@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../hooks/useTitle';
 
 const SHowServices = () => {
 
+    useTitle('See Services');
   
 
     const [allservices, setAllServices] = useState([]);

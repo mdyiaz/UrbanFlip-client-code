@@ -2,9 +2,12 @@ import React, { useContext } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import loginImg from '../../assets/login.png'
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 import Social from './Social';
 
 const Login = () => {
+
+  useTitle('Login');
 
   const {login} = useContext(AuthContext);
   const location = useLocation();

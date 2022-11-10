@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import useTitle from '../../../hooks/useTitle';
 import ServicesList from '../../../Shared/ServicesList/ServicesList';
 
 const Services = () => {
 
+    useTitle('Services');
     const [services, setServices] = useState([]);
 
     useEffect( () => {

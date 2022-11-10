@@ -8,7 +8,7 @@ const ServiceDetails = () => {
 
   
     const servicedetails = useLoaderData();
-    console.log(servicedetails);
+    
     const {user} = useContext(AuthContext);
 
     

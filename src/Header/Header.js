@@ -2,9 +2,11 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/logo.svg';
 import { AuthContext } from '../Contexts/AuthProvider/AuthProvider';
+import useTitle from '../hooks/useTitle';
 
 const Header = () => {
 
+  useTitle('Header')
 
   const  {user, logOut} = useContext(AuthContext)
 

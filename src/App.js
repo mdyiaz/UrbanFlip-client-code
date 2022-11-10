@@ -11,6 +11,7 @@ import Blog from './Pages/Blog/Blog';
 import ServiceDetails from './Shared/ServicesList/ServiceDetails';
 import PrivateRoute from './Shared/PrivateRoute/PrivateRoute';
 import MyReviews from './Shared/PrivateRoute/MyReviews/MyReviews';
+import AddService from './Pages/AllServices/AddService/AddService';
 
 function App() {
 
@@ -53,6 +54,10 @@ function App() {
           path:'/servicedetails/:id',
           loader:({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`),
           element:<ServiceDetails></ServiceDetails>
+        },
+        {
+          path:'/addservice',
+          element:<AddService></AddService>
         }
         
         

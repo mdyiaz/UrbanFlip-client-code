@@ -4,10 +4,12 @@ import { Link } from 'react-router-dom';
 import { setAuthToken } from '../../API/api';
 import login from '../../assets/login.png'
 import { AuthContext } from '../../Contexts/AuthProvider/AuthProvider';
+import useTitle from '../../hooks/useTitle';
 
 
 const Register = () => {
 
+  useTitle('Register');
 
   const {createUser, updatePhoto, } = useContext(AuthContext)
   
