@@ -13,7 +13,7 @@ useTitle('AddService');
         const price = form.price.value;
 
         const service = {name, photo, price};
-        fetch('http://localhost:5000/addservice', {
+        fetch('https://b6a11-service-review-server-side-mdyiaz.vercel.app/addservice', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

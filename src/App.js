@@ -45,7 +45,7 @@ function App() {
         },
         {
           path:'/servicedetails/:id',
-          loader: ({ params }) => fetch(`http://localhost:5000/services/${params.id}`),
+          loader: ({ params }) => fetch(`https://b6a11-service-review-server-side-mdyiaz.vercel.app/services/${params.id}`),
           element:<ServiceDetails></ServiceDetails>
         },
         {
@@ -54,7 +54,7 @@ function App() {
         },
         {
           path:'/servicedetails/:id',
-          loader:({ params }) => fetch(`http://localhost:5000/reviews/${params.id}`),
+          loader:({ params }) => fetch(`https://b6a11-service-review-server-side-mdyiaz.vercel.app/reviews/${params.id}`),
           element:<ServiceDetails></ServiceDetails>
         },
         {
